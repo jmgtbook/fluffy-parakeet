@@ -1,0 +1,32 @@
+.chekbook_content {
+    margin-top: 180px;
+    min-height: calc(100vh - 340px);
+}
+.content_section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+}
+.banner_section{
+    margin-left: calc(50% - 50vw);
+    width: 100vw;
+}
+.box_banner{
+    display:flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    /* will-change: transform; */
+    z-index: 1;
+}
+.banner{
+    cursor: pointer;
+    max-height: 480px;
+    opacity: 1;
+    overflow: hidden;
+    transition: opacity .6s ease-in-out;
+    vertical-align: top;
+    width: 100%;
+    justify-content: center;
+}

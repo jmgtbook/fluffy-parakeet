@@ -27,19 +27,12 @@
 					<a href="/">CHEK</a>
 				</span>
 				<div class="center">
-					<div class="box_search">
-						<a href="/search" class="totalsearch">
-							<span class="totalsearch_txt">통합검색</span>
-							<img src="/icon-totalsearch.svg" alt="icon-totalsearch" />
-						</a>
-						<input placeholder="검색어를 입력하세요" class="input_search" />
-						<span class="search_icon">
-							<a href="/"> <img src="/icon-search.svg" alt="icon-search" /></a>
-						</span>
-					</div>
-					<div class="line_search"></div>
 				</div>
                 <div class="right">
+					<span class="_search_icon">
+						<a href="/">
+							<img src="/icon-search.svg" alt="icon-search" /></a>
+					</span>
                     <span class="mypage_icon">
                         <a href="/mypage">
                             <img src="/icon-mypage.svg" alt="icon-mypage" />
@@ -52,23 +45,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="header_nav">
-		<nav class="box_nav">
-			<ul class="nav_lists">
-				<li class="nav_item_icon"><a href="/category">
-					<img src="/icon-category.svg" alt="icon-category">
-				</a></li>
-				<li class="nav_items" style="padding-left: 10px; padding-right:25px;"><a href="/category">CATEGORY</a></li>
-				<div class="nav_line"></div>
-				<li class="nav_items"><a href="/home">HOME</a></li>
-				<li class="nav_items"><a href="/chekbook">CHEKBOOK</a></li>
-				<li class="nav_items"><a href="/univsell">UNIVSELL</a></li>
-				<li class="nav_items"><a href="/locker">LOCKER</a></li>
-			</ul>
-		</nav>
-	</div>
+	
 </div>
 
 <style>
-	@import '../css/header.css';
+	@import '../css/login_header.css';
 </style>
