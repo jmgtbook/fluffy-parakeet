@@ -1,0 +1,434 @@
+.jangbaguni_content {
+    min-height: calc(100vh - 340px);
+    margin-top: 190px;
+}
+
+.jangbaguni_content_section {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    flex-direction: column;
+}
+
+.jB_main_section {
+    margin-left: 40px;
+    max-width: 850px;
+    position: relative;
+}
+
+.jB_box_title {
+    padding: 10px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.jangbaguni_title {
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px;
+}
+
+.jB_conv_section {
+    max-width: 350px;
+    margin-right: 40px;
+}
+.jB_box_sub_title {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    border-top: 1px solid #AAA;
+}
+.jB_sub_txt1{
+    width:60%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.jB_sub_txt2{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:17.5%;
+    height:100%;
+    border-right: 1px solid #AAA;
+    border-left: 1px solid #AAA;
+}
+.jB_sub_txt3{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:22.5%;
+    height:100%;
+}
+.jB_box_book {
+    display: flex;
+    width: 100%;
+    height: 210px;
+    align-items: center;
+    border-top: 1px solid #AAA;
+}
+.jB_box_select{
+    display:flex;
+    justify-content: center;
+    width:5%;
+}
+.jB_btn_select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+    border-color: transparent;
+
+}
+
+.jB_btn_selecting {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+    border-color: transparent;
+    background-color: #00bfff;
+}
+.jB_btn_select {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+    border-color: transparent;
+    background-color: #AAA;
+}
+
+.jB_btn_selected {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+    border-color: transparent;
+    background-color: #00bfff;
+}
+
+.jB_box_select img {
+    width: 20px;
+    height: 20px;
+}
+
+.jB_box_info {
+    display: inline-flex;
+    width: 55%;
+    
+}
+
+.jB_box_info img {
+    width: 100px;
+    height: 150px;
+    margin-left:60px;
+    background-color: antiquewhite;
+}
+
+.jB_box_txt {
+    margin-left: 30px;
+}
+
+.jB_title_txt {
+    color: #000;
+    text-align: left;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    /* 111.111% */
+    text-transform: uppercase;
+}
+
+.jB_info_txt {
+    color: #000;
+    text-align: left;
+    font-family: Inika;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.jB_price_info_txt {
+    color: #000;
+    text-align: left;
+    font-family: Inika;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.jB_price {
+    display: none;
+}
+
+.jB_price_txt {
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.jB_box_price {
+    display: flex;
+    flex-direction: column;
+    width: 17.5%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-left: 1px solid #AAA;
+    border-right: 1px solid #AAA;
+}
+
+.jB_btn_count {
+    display: inline-flex;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #AAA;
+    background: #FFF;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.jB_btn_count button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.jB_box_input {
+    display: flex;
+    flex-direction: column;
+    width: 22.5%;
+    align-items: center;
+    height: 100%;
+
+}
+
+.jB_locker_set {
+    display: flex;
+    height: 50%;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #AAA;
+    width: 100%
+}
+
+.jB_package_set {
+    display: flex;
+    height: 50%;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.jB_locker_set a {
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px
+}
+
+.jB_package_set a {
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+/* -----------------------conv_section------------------------ */
+.jB_conv_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position:fixed;
+    top:200px;
+    left:70%;
+}
+
+.jB_payProcess_bar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 35px;
+    background-color: #FFF;
+}
+
+.jB_box_payProcess {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.jB_box_payProcess div {
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #AAA;
+    color: #FFF;
+    font-family: Inika;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.jB_box_payProcess span {
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    width:65px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.jB_conv_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    border: 3px solid #E8E8E8;
+
+    background-color: #FFF;
+}
+
+.jB_info_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px;
+    /* 205% */
+    letter-spacing: 2px;
+}
+
+.jB_box_price_cal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 37.5%;
+    width: 90%;
+    border-bottom: 3px solid #000;
+    border-top: 3px solid #000;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.jB_box_product_price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.jB_box_product_price>span {
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.jB_box_total_price {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+.jB_box_total_price span {
+    color: #000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    /* 111.111% */
+    text-transform: uppercase;
+}
+
+.jB_box_order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22.5%;
+    margin-bottom: 20px;
+}
+
+.jB_btn_order {
+    width: 260px;
+    height: 50px;
+    border: transparent;
+    border-radius: 10px;
+    background: #00BFFF;
+    color: #FFF;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+}
