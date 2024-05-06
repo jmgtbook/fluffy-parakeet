@@ -4,7 +4,13 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:0-18-bullseye",
 	"features": {
-	  "ghcr.io/devcontainers-contrib/features/jshint:2": {}
+	"ghcr.io/devcontainers-contrib/features/jshint:2": {
+		"version": "latest"
+	},
+	"ghcr.io/devcontainers/features/python:1": {
+		"installTools": true,
+		"version": "3.12"
+	}
 	},
   
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
