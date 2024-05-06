@@ -1,9 +1,25 @@
+<script>
+	import { page, access_token, username, is_login } from './store';
+</script>
+
 <div class="header">
 	<div class="header_top">
 		<div class="top_section">
 			<ul class="top_list">
 				<span class="top_subitem">
-					<a href="/login"> 로그인 </a>
+					{#if $is_login}
+						<a
+							href="/login"
+							on:click={() => {
+								$access_token = '';
+								$username = '';
+								$is_login = false;
+							}}
+							>로그아웃
+						</a>
+					{:else if $is_login==false }
+						<a href="/login"> 로그인 </a>
+					{/if}
 				</span>
 				<span class="top-subitem">
 					<a href="/signup"> 회원가입 </a>
@@ -39,26 +55,30 @@
 					</div>
 					<div class="line_search"></div>
 				</div>
-                <div class="right">
-                    <span class="mypage_icon">
-                        <a href="/mypage">
-                            <img src="/icon-mypage.svg" alt="icon-mypage" />
-                        </a>
-                    </span>
-                    <span class="checkchek_icon"
-                        ><a href="/checkchek"> <img src="/icon-checkchek.svg" alt="icon-checkchek" /></a>
-                    </span>
-                </div>
+				<div class="right">
+					<span class="mypage_icon">
+						<a href="/mypage">
+							<img src="/icon-mypage.svg" alt="icon-mypage" />
+						</a>
+					</span>
+					<span class="checkchek_icon"
+						><a href="/checkchek"> <img src="/icon-checkchek.svg" alt="icon-checkchek" /></a>
+					</span>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="header_nav">
 		<nav class="box_nav">
 			<ul class="nav_lists">
-				<li class="nav_item_icon"><a href="/category">
-					<img src="/icon-category.svg" alt="icon-category">
-				</a></li>
-				<li class="nav_items" style="padding-left: 10px; padding-right:25px;"><a href="/category">CATEGORY</a></li>
+				<li class="nav_item_icon">
+					<a href="/category">
+						<img src="/icon-category.svg" alt="icon-category" />
+					</a>
+				</li>
+				<li class="nav_items" style="padding-left: 10px; padding-right:25px;">
+					<a href="/category">CATEGORY</a>
+				</li>
 				<div class="nav_line"></div>
 				<li class="nav_items"><a href="/home">HOME</a></li>
 				<li class="nav_items"><a href="/chekbook">CHEKBOOK</a></li>

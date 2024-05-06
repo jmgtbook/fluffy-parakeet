@@ -2,19 +2,19 @@
 	<div class="header_top">
 		<div class="top_section">
 			<ul class="top_list">
-				<span class="top_subitem">
+				<span class="top_login_subitem">
 					<a href="/login"> 로그인 </a>
 				</span>
-				<span class="top-subitem">
+				<span class="top_login_subitem">
 					<a href="/signup"> 회원가입 </a>
 				</span>
-				<span class="top-subitem">
+				<span class="top_login_subitem">
 					<a href="/mypage"> 마이페이지 </a>
 				</span>
-				<span class="top-subitem">
+				<span class="top_login_subitem">
 					<a href="/jangbaguni"> 장바구니 </a>
 				</span>
-				<span style="margin-right: 0px;" class="top-subitem">
+				<span style="margin-right: 0px;" class="top_login_subitem">
 					<a href="/support"> 문의하기 </a>
 				</span>
 			</ul>

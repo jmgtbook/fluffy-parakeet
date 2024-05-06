@@ -1,3 +1,36 @@
+<script>
+	import { goto } from '$app/navigation';
+	import fastapi from './api';
+	import { access_token, username, is_login } from './store';
+
+	let error = { detail: [] };
+	let login_username = '';
+	let login_password = '';
+
+	function login(event) {
+		event.preventDefault();
+		let url = '/user/login';
+		let params = {
+			username: login_username,
+			password: login_password
+		};
+		fastapi(
+			'login',
+			url,
+			params,
+			(json) => {
+				$access_token = json.access_token;
+				$username = json.username;
+				$is_login = true;
+				goto('/');
+			},
+			(json_error) => {
+				error = json_error;
+			}
+		);
+	}
+</script>
+
 <div class="content">
 	<div class="login_section">
 		<div class="box_login">
@@ -5,15 +38,26 @@
 			<a href="/home" class="login_slogan">CHEK IN THE AIR</a>
 			<div class="box_email">
 				<span class="email_title">이메일 주소</span>
-				<input placeholder="이메일을 입력해주세요" class="input_email" />
+				<input
+					placeholder="이메일을 입력해주세요"
+					class="input_email"
+					id="username"
+					bind:value={login_username}
+				/>
 				<div class="line_email"></div>
 			</div>
 			<div class="box_password">
 				<span class="password_title">비밀번호</span>
-				<input type="password" placeholder="비밀번호를 입력해주세요" class="input_password" />
+				<input
+					type="password"
+					placeholder="비밀번호를 입력해주세요"
+					class="input_password"
+					id="password"
+					bind:value={login_password}
+				/>
 				<div class="line_password"></div>
 			</div>
-			<button class="bth_login"><span class="btn_txt">로그인</span></button>
+			<button class="bth_login" on:click={login}><span class="btn_txt">로그인</span></button>
 			<ul class="sub_lists">
 				<span class="sub_item1"><a href="/signup">회원가입</a></span>
 				<div class="sub_lines"></div>

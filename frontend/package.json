@@ -24,6 +24,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"qs": "^6.12.1",
+		"svelte-spa-router": "^4.0.1",
 		"swiper": "^8.4.6"
 	}
 }
