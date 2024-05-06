@@ -1,0 +1,117 @@
+li,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #ffffff;
+}
+
+/* ----------------------------------header_top-------------------------- */
+.header_top {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+}
+
+.top_section {
+    display: flex;
+    position: relative;
+    height: 25px;
+    padding: 5px 40px 0;
+}
+
+.top_list {
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+}
+
+.top_list span {
+    margin-right: 20px;
+}
+
+.top_list a {
+    align-items: center;
+    color: rgba(34, 34, 34, .8);
+    display: flex;
+    font-size: 12px;
+    letter-spacing: -.06px;
+    text-decoration: none;
+}
+
+/* ----------------------------------header_main-------------------------- */
+.header_main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+}
+
+.main_section {
+    display: flex;
+    position: relative;
+    height: 60px;
+    padding: 0px 40px 0;
+}
+
+.main_both {
+    display: flex;
+    height: 55px;
+    width: 100%;
+    padding-top: 0px;
+    align-items: center;
+    min-width: 360px;
+}
+
+.chek_hd_logo {
+    display: flex;
+    width: 140px;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.chek_hd_logo>a {
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px;
+    /* 113.889% */
+    letter-spacing: 10.8px;
+    text-decoration: none;
+}
+
+.main_both .center {
+    display: flex;
+    width: 100%;
+    
+}
+
+
+.main_both .right {
+    display: flex;
+    height:55px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 0;
+}
+
+
+.main_both .right span {
+    padding-left: 40px;
+    
+    
+}
